@@ -1,0 +1,19 @@
+# johnvusich_config.yml
+title: "Your Awesome Title"
+email: your-email@example.com
+description: "Write an awesome description for your new site here."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://johnvusich.github.io" # the base hostname & protocol for your site
+github_username: johnvusich
+twitter_username: vusich
+
+# Social Links
+social_links:
+  - title: GitHub
+    url: https://github.com/johnvusich
+    icon: fa-github
+  - title: Twitter
+    url: https://x.com/vusich
+    icon: fa-twitter
+
+# Other settings...
