@@ -5,7 +5,10 @@ title: Home
 
 # Welcome to My Website
 
-Hello! I'm John Vusich, a researcher in Cell and Molecular Biology. This site showcases my projects, publications, and more. Explore the links below to learn more about me.
+Hello! I’m John Vusich, a Cell and Molecular Biology PhD student
+  studying computational and cancer biology in the Andrechek lab at MSU. 
+  This showcases my projects, publications, and more. 
+  Explore the links below to learn more about me.
 
 - [About Me](about.html)
 - [Projects](projects.html)
