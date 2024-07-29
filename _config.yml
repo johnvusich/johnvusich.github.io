@@ -21,8 +21,10 @@
 title: Your awesome title
 email: vusichjo@msu.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal website for John Vusich. I am a Cell and Molecular Biology PhD student
-  studying computational and cancer biology in the Andrechek lab at MSU.
+  Hello! I’m John Vusich, a Cell and Molecular Biology PhD student
+  studying computational and cancer biology in the Andrechek lab at MSU. 
+  This showcases my projects, publications, and more. 
+  Explore the links below to learn more about me.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: vusich
