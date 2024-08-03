@@ -46,7 +46,7 @@ git clone https://github.com/your_github_username/your_repository_name.git
 cd your_repository_name
 ```
 
-###Step 4: Step 4: Install Dependencies
+### Step 4: Step 4: Install Dependencies
 1. Ensure you have Ruby installed. You can download it from ruby-lang.org.
 2. Install Bundler, a Ruby gem that manages dependencies for Ruby projects:
 ```bash
@@ -56,14 +56,14 @@ gem install bundler
 ```bash
 bundle install
 ```
-###Step 5: Build and Serve the Site Locally
+### Step 5: Build and Serve the Site Locally
 1. Use Jekyll's built-in server to build and serve the site locally:
 ```bash
 bundle exec jekyll serve
 ```
 2. Open your web browser and go to http://localhost:4000 to see the site in action.
 
-###Step 6: Run nf-core Pipeline with msu.config
+### Step 6: Run nf-core Pipeline with msu.config
 1. Load Nextflow on the MSU HPC system:
 ```bash
 module load nextflow
@@ -73,7 +73,7 @@ module load nextflow
 nextflow run nf-core/rnaseq --reads '*_R{1,2}.fastq.gz' --genome GRCh37 -profile msu -c msu.config
 ```
 
-###Conclusion
+### Conclusion
 By following these steps, you can successfully set up and use a custom profile for the MSU HPC system to run nf-core pipelines with your own data. This configuration ensures that your nf-core pipelines run smoothly on the MSU HPC environment.
 
 Stay tuned for more updates and tips on using nf-core and Jekyll!
