@@ -29,13 +29,13 @@ To run the site locally on your machine, follow these steps:
 1. **Clone the Repository**: Clone this repository to your local machine using Git:
 
     ```bash
-    git clone https://github.com/your_github_username/your_github_username.github.io.git
+    git clone https://github.com/johnvusich/johnvusich.github.io.git
     ```
 
 2. **Navigate to the Directory**: Change into the directory of the cloned repository:
 
     ```bash
-    cd your_github_username.github.io
+    cd johnvusich.github.io
     ```
 
 ### Install Dependencies
@@ -56,6 +56,20 @@ To run the site locally on your machine, follow these steps:
 
 2. **View the Site**: Open your web browser and go to `http://localhost:4000` to see the site in action.
 
+## File Structure
+
+- **_includes**: Contains reusable HTML components like the footer.
+- **_layouts**: Contains layout files for different page types.
+- **_posts**: Contains blog posts.
+- **404.html**: Custom 404 error page.
+- **Gemfile**: Manages Ruby gem dependencies.
+- **Gemfile.lock**: Locks the gem dependencies.
+- **LICENSE**: The license for this project.
+- **README.md**: This file.
+- **_config.yml**: Jekyll configuration file.
+- **about.markdown**: The About page.
+- **index.md**: The Home page.
+
 ## Contributing
 
 If you'd like to contribute to this site, please fork the repository and create a pull request. Contributions are welcome!
@@ -63,4 +77,3 @@ If you'd like to contribute to this site, please fork the repository and create 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
