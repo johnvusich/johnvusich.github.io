@@ -4,7 +4,6 @@ baseurl: "" # the subpath of your site, e.g., /blog
 url: "https://johnvusich.github.io" # the base hostname & protocol for your site
 theme: minimal-mistakes-jekyll
 
-# Minimal Mistakes settings
 author:
   name: "John Vusich"
   avatar: "/assets/images/avatar.png" # Add your avatar image in this path
@@ -18,7 +17,6 @@ author:
       icon: "fab fa-twitter"
       url: "https://x.com/vusich"
 
-# Social sharing
 social:
   - title: "Follow me on GitHub"
     url: "https://github.com/johnvusich"
@@ -27,10 +25,8 @@ social:
     url: "https://x.com/vusich"
     icon: "fab fa-twitter"
 
-# Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Additional configurations
-google_analytics: UA-XXXXXXXX-X # Replace with your Google Analytics tracking ID
+google_analytics: G-FG8VY7BT6S # Your Google Analytics Measurement ID
