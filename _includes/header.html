@@ -6,13 +6,4 @@
     <li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
     <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
   </ul>
-  <ul class="social-icons">
-    {% for item in site.social %}
-    <li>
-      <a href="{{ item.url }}" title="{{ item.title }}">
-        <i class="{{ item.icon }}"></i>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
 </nav>
