@@ -1,5 +1,36 @@
-title: John Vusich's Blog
+title: John Vusich
 description: Welcome to my personal website.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g., /blog
 url: "https://johnvusich.github.io" # the base hostname & protocol for your site
-theme: minima # you can choose any Jekyll theme you like
+theme: minimal-mistakes-jekyll
+
+# Minimal Mistakes settings
+author:
+  name: "John Vusich"
+  avatar: "/assets/images/avatar.png" # Add your avatar image in this path
+  bio: "PhD student in Cell and Molecular Biology studying computational and cancer biology at MSU."
+  location: "Michigan, USA"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/johnvusich"
+    - label: "Twitter"
+      icon: "fab fa-twitter"
+      url: "https://x.com/vusich"
+
+# Social sharing
+social:
+  - title: "Follow me on GitHub"
+    url: "https://github.com/johnvusich"
+    icon: "fab fa-github"
+  - title: "Follow me on Twitter"
+    url: "https://x.com/vusich"
+    icon: "fab fa-twitter"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Additional configurations
+google_analytics: UA-XXXXXXXX-X # Replace with your Google Analytics tracking ID
