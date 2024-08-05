@@ -2,7 +2,7 @@ title: John Vusich
 description: Welcome to my personal website.
 baseurl: "" # the subpath of your site, e.g., /blog
 url: "https://johnvusich.github.io" # the base hostname & protocol for your site
-theme: minimal-mistakes-jekyll
+theme: minima
 
 author:
   name: "John Vusich"
