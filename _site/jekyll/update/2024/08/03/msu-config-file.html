@@ -1,0 +1,77 @@
+<p>In this blog post, I’ll guide you through the process of making a custom profile for the Michigan State University (MSU) HPC system with nf-core pipelines. This setup ensures that nf-core pipelines can run efficiently on the MSU HPC environment using your own data.</p>
+
+<h2 id="step-by-step-guide">Step-by-Step Guide</h2>
+
+<h3 id="step-1-create-the-configuration-file">Step 1: Create the Configuration File</h3>
+
+<p>First, we need to create the <code class="language-plaintext highlighter-rouge">msu.config</code> file with the following content:</p>
+
+<div class="language-groovy highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">params</span> <span class="o">{</span>
+    <span class="n">config_profile_description</span> <span class="o">=</span> <span class="s1">'Michigan State University HPC profile provided by nf-core/configs.'</span>
+    <span class="n">config_profile_contact</span> <span class="o">=</span> <span class="s1">'John Vusich (@johnvusich)'</span>
+    <span class="n">config_profile_url</span> <span class="o">=</span> <span class="s1">'https://github.com/johnvusich/bulk-rnaseq/blob/main/msu.config'</span>
+    <span class="n">max_memory</span> <span class="o">=</span> <span class="mi">250</span><span class="o">.</span><span class="na">GB</span>
+    <span class="n">max_cpus</span> <span class="o">=</span> <span class="mi">40</span>
+    <span class="n">max_time</span> <span class="o">=</span> <span class="mi">168</span><span class="o">.</span><span class="na">h</span> <span class="c1">// One week in hours</span>
+<span class="o">}</span>
+
+<span class="n">singularity</span> <span class="o">{</span>
+    <span class="n">enabled</span> <span class="o">=</span> <span class="kc">true</span>
+    <span class="n">autoMounts</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="o">}</span>
+
+<span class="n">process</span> <span class="o">{</span>
+    <span class="n">executor</span> <span class="o">=</span> <span class="s1">'slurm'</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<h3 id="step-2-add-the-config-file-to-your-repository">Step 2: Add the Config File to Your Repository</h3>
+<p>Navigate to your repository on GitHub.
+Go to the root directory and create a new file named msu.config.
+Paste the configuration content into the file and commit the changes.</p>
+
+<p>###Step 3: Clone Your Repository Locally
+Open your terminal.</p>
+
+<p>Clone your repository:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/your_github_username/your_repository_name.git
+<span class="nb">cd </span>your_repository_name
+</code></pre></div></div>
+
+<h3 id="step-4-step-4-install-dependencies">Step 4: Step 4: Install Dependencies</h3>
+<ol>
+  <li>Ensure you have Ruby installed. You can download it from ruby-lang.org.</li>
+  <li>Install Bundler, a Ruby gem that manages dependencies for Ruby projects:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>bundler
+</code></pre></div>    </div>
+  </li>
+  <li>Install Jekyll and other dependencies using Bundler:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">install</span>
+</code></pre></div>    </div>
+    <h3 id="step-5-build-and-serve-the-site-locally">Step 5: Build and Serve the Site Locally</h3>
+  </li>
+  <li>Use Jekyll’s built-in server to build and serve the site locally:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div>    </div>
+  </li>
+  <li>Open your web browser and go to http://localhost:4000 to see the site in action.</li>
+</ol>
+
+<h3 id="step-6-run-nf-core-pipeline-with-msuconfig">Step 6: Run nf-core Pipeline with msu.config</h3>
+<ol>
+  <li>Load Nextflow on the MSU HPC system:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module load nextflow
+</code></pre></div>    </div>
+  </li>
+  <li>Run your nf-core pipeline with the msu.config profile. For example, to run the nf-core/rnaseq pipeline:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nextflow run nf-core/rnaseq <span class="nt">--reads</span> <span class="s1">'*_R{1,2}.fastq.gz'</span> <span class="nt">--genome</span> GRCh37 <span class="nt">-profile</span> msu <span class="nt">-c</span> msu.config
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="conclusion">Conclusion</h3>
+<p>By following these steps, you can successfully set up and use a custom profile for the MSU HPC system to run nf-core pipelines with your own data. This configuration ensures that your nf-core pipelines run smoothly on the MSU HPC environment.</p>
+
+<p>Stay tuned for more updates and tips on using nf-core and Jekyll!</p>
+
+<pre><code class="language-vbnet">This markdown file provides a step-by-step guide for users to set up and use the `msu.config` file for running nf-core pipelines on the MSU HPC system.
+</code></pre>
