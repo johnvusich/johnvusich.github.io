@@ -70,3 +70,28 @@ footer {
 .social-icons a:hover {
   color: #ccc;
 }
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-list .project {
+  width: 30%;
+  margin: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.project-list .project img {
+  max-width: 100%;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.project-list .project h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
