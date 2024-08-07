@@ -44,29 +44,84 @@ footer {
   background: #333;
   color: #fff;
   text-align: center;
-  padding: 1rem 0;
+  padding: 20px 0;
   position: relative;
   width: 100%;
   bottom: 0;
 }
+
 .social-icons {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  gap: 10px;
 }
 
 .social-icons li {
-  margin: 0 0.5rem;
+  display: inline;
 }
 
 .social-icons a {
-  color: #fff;
   text-decoration: none;
-  font-size: 1.5rem;
+  color: inherit;
+}
+
+.social-icons i, .social-icons img, .social-icons svg {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
 }
 
 .social-icons a:hover {
   color: #ccc;
+}
+
+.contact-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.contact-icons li {
+  display: inline;
+}
+
+.contact-icons a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-icons i {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-list .project {
+  width: 30%;
+  margin: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.project-list .project img {
+  max-width: 100%;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.project-list .project h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
 }
