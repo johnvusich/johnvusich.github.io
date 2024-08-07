@@ -6,18 +6,9 @@ title: Contact
 # Contact
 
 Here are some ways to contact me:
-
-<div style="font-size: 2em;">
-  <a href="mailto:vusichj@gmail.com" aria-label="Email">
-    <i class="fas fa-envelope"></i>
-  </a>
-  <a href="https://github.com/johnvusich" aria-label="GitHub">
-    <i class="fab fa-github"></i>
-  </a>
-  <a href="https://www.linkedin.com/in/johnvusich" aria-label="LinkedIn">
-    <i class="fab fa-linkedin"></i>
-  </a>
-  <a href="https://x.com/vusich" aria-label="Twitter">
-    <i class="fab fa-twitter"></i>
-  </a>
-</div>
+<ul class="social-icons">
+  <li><a href="mailto:vusichj@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+  <li><a href="https://github.com/johnvusich" target="_blank"><i class="fab fa-github"></i></a></li>
+  <li><a href="https://linkedin.com/in/johnvusich" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+  <li><a href="https://twitter.com/vusichj" target="_blank"><i class="fab fa-twitter"></i></a></li>
+</ul>
